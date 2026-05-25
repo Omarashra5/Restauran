@@ -278,7 +278,7 @@ export function CheckoutPage() {
                       {language === 'ar' ? item.nameAr : item.name} x{item.quantity}
                     </span>
                     <span className="font-medium dark:text-white">
-                      {(item.price * item.quantity).toFixed(2)} {t('ريال', 'SAR')}
+                      {(item.price * item.quantity).toFixed(2)} {t('جنية', 'L.E')}
                     </span>
                   </div>
                 ))}
@@ -291,11 +291,11 @@ export function CheckoutPage() {
                 </div>
                 <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('رسوم التوصيل', 'Delivery Fee')}</span>
-                  <span>{deliveryFee.toFixed(2)} {t('ريال', 'SAR')}</span>
+                  <span>{deliveryFee.toFixed(2)} {t('جنية', 'L.E')}</span>
                 </div>
                 <div className="border-t dark:border-gray-700 pt-3 flex justify-between font-bold text-xl">
                   <span className="dark:text-white">{t('المجموع الكلي', 'Total')}</span>
-                  <span className="text-orange-500">{total.toFixed(2)} {t('ريال', 'SAR')}</span>
+                  <span className="text-orange-500">{total.toFixed(2)} {t('جنية', 'L.E')}</span>
                 </div>
               </div>
 
