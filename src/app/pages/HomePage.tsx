@@ -151,12 +151,12 @@ export function HomePage() {
                     </div>
                     <div className="flex items-center gap-1">
                       <DollarSign className="size-4 text-green-500" />
-                      <span>{store.deliveryFee} {t('ريال', 'SAR')}</span>
+                      <span>{store.deliveryFee} {t('جنية', 'L.E')}</span>
                     </div>
                   </div>
                   
                   <div className="text-xs text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-800 rounded-lg px-3 py-2">
-                    {t('الحد الأدنى:', 'Min order:')} <span className="font-bold text-orange-500">{store.minOrder} {t('ريال', 'SAR')}</span>
+                    {t('الحد الأدنى:', 'Min order:')} <span className="font-bold text-orange-500">{store.minOrder} {t('جنية', 'L.E')}</span>
                   </div>
                 </div>
               </Link>
