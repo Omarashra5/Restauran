@@ -256,7 +256,7 @@ export function StorePage() {
                         {product.discount ? (
                           <div>
                             <span className="text-xl font-bold text-orange-500">
-                              {(product.price * (1 - product.discount / 100)).toFixed(0)} {t('ريال', 'SAR')}
+                              {(product.price * (1 - product.discount / 100)).toFixed(0)} {t('جنية', 'L.E')}
                             </span>
                             <span className="text-sm text-gray-400 line-through ml-2">
                               {product.price}
