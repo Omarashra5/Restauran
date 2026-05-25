@@ -23,7 +23,7 @@ export function Header() {
               <h1 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                 {t('ديليفري', 'Delivery')}
               </h1>
-              <p className="text-xs text-gray-500 dark:text-gray-400">{t('توصيل سريع', 'Fast Delivery')}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">{t('أسرع ديلفري في مصر ', 'Fastest delivery in Egypt')}</p>
             </div>
           </Link>
 
@@ -32,7 +32,7 @@ export function Header() {
             <MapPin className="size-5 text-orange-500" />
             <div>
               <p className="text-xs text-gray-500 dark:text-gray-400">{t('التوصيل إلى', 'Deliver to')}</p>
-              <p className="font-medium dark:text-white">{t('الرياض، حي النرجس', 'Riyadh, Al Narjis')}</p>
+              <p className="font-medium dark:text-white">{t('أسيوط , مدينة مبارك', 'Assiut, Mubarek City')}</p>
             </div>
           </div>
 
