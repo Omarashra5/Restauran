@@ -132,7 +132,7 @@ export function CartPage() {
                           </div>
                         ) : (
                           <span className="text-xl font-bold text-orange-500">
-                            {(item.price * item.quantity).toFixed(2)} {t('ريال', 'SAR')}
+                            {(item.price * item.quantity).toFixed(2)} {t('جنية', 'L.E')}
                           </span>
                         )}
                       </div>
@@ -170,25 +170,25 @@ export function CartPage() {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('المجموع الفرعي', 'Subtotal')}</span>
-                  <span className="font-medium">{subtotal.toFixed(2)} {t('ريال', 'SAR')}</span>
+                  <span className="font-medium">{subtotal.toFixed(2)} {t('جنية', 'L.E')}</span>
                 </div>
                 <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('رسوم التوصيل', 'Delivery Fee')}</span>
-                  <span className="font-medium">{deliveryFee.toFixed(2)} {t('ريال', 'SAR')}</span>
+                  <span className="font-medium">{deliveryFee.toFixed(2)} {t('جنية', 'L.E')}</span>
                 </div>
                 <div className="border-t dark:border-gray-700 pt-4 flex justify-between font-bold text-xl">
                   <span className="dark:text-white">{t('المجموع الكلي', 'Total')}</span>
-                  <span className="text-orange-500">{total.toFixed(2)} {t('ريال', 'SAR')}</span>
+                  <span className="text-orange-500">{total.toFixed(2)} {t('جنية', 'L.E')}</span>
                 </div>
               </div>
 
               {!canCheckout && (
                 <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-4">
                   <p className="text-sm text-amber-800 dark:text-amber-300 font-medium">
-                    {t('الحد الأدنى للطلب', 'Minimum Order')} {minOrder} {t('ريال', 'SAR')}
+                    {t('الحد الأدنى للطلب', 'Minimum Order')} {minOrder} {t('جنية', 'L.E')}
                     <br />
                     <span className="text-amber-600 dark:text-amber-400">
-                      {t('أضف', 'Add')} {(minOrder - subtotal).toFixed(2)} {t('ريال أخرى', 'SAR more')}
+                      {t('أضف', 'Add')} {(minOrder - subtotal).toFixed(2)} {t('جنية أخرى', 'L.E more')}
                     </span>
                   </p>
                 </div>
@@ -205,7 +205,7 @@ export function CartPage() {
               >
                 {canCheckout 
                   ? t('إتمام الطلب', 'Proceed to Checkout')
-                  : `${t('أضف', 'Add')} ${(minOrder - subtotal).toFixed(2)} ${t('ريال', 'SAR')}`
+                  : `${t('أضف', 'Add')} ${(minOrder - subtotal).toFixed(2)} ${t('جنية', 'L.E')}`
                 }
               </button>
 
