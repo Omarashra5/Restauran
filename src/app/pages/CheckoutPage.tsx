@@ -287,7 +287,7 @@ export function CheckoutPage() {
               <div className="border-t dark:border-gray-700 pt-4 space-y-3 mb-6">
                 <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('المجموع الفرعي', 'Subtotal')}</span>
-                  <span>{subtotal.toFixed(2)} {t('ريال', 'SAR')}</span>
+                  <span>{subtotal.toFixed(2)} {t('جنية', 'L.E')}</span>
                 </div>
                 <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('رسوم التوصيل', 'Delivery Fee')}</span>
