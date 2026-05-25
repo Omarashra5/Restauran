@@ -115,7 +115,7 @@ export function StorePage() {
                 <div className="flex items-center gap-2 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 px-4 py-3 rounded-xl border border-green-200 dark:border-green-800">
                   <DollarSign className="size-6 text-green-600 dark:text-green-400" />
                   <div>
-                    <span className="font-bold dark:text-white">{store.deliveryFee} {t('ريال', 'SAR')}</span>
+                    <span className="font-bold dark:text-white">{store.deliveryFee} {t('جنية', 'L.E')}</span>
                     <p className="text-xs text-gray-500 dark:text-gray-400">{t('رسوم التوصيل', 'Delivery Fee')}</p>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export function StorePage() {
               
               <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-xl px-4 py-3">
                 <p className="text-sm dark:text-gray-300">
-                  {t('الحد الأدنى للطلب:', 'Minimum Order:')} <span className="font-bold text-orange-500 text-lg">{store.minOrder} {t('ريال', 'SAR')}</span>
+                  {t('الحد الأدنى للطلب:', 'Minimum Order:')} <span className="font-bold text-orange-500 text-lg">{store.minOrder} {t('جنية', 'L.E')}</span>
                 </p>
               </div>
             </div>
@@ -181,7 +181,7 @@ export function StorePage() {
                   </h3>
                   <div className="flex items-center justify-between">
                     <span className="text-orange-500 font-bold">
-                      {product.price} {t('ريال', 'SAR')}
+                      {product.price} {t('جنية', 'L.E')}
                     </span>
                     <button
                       onClick={() => handleAddToCart(product)}
@@ -264,7 +264,7 @@ export function StorePage() {
                           </div>
                         ) : (
                           <span className="text-xl font-bold text-orange-500">
-                            {product.price} {t('ريال', 'SAR')}
+                            {product.price} {t('جنية', 'L.E')}
                           </span>
                         )}
                       </div>
